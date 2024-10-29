@@ -7,8 +7,8 @@
             Console.WriteLine("Hello World!!");
             var player = new Player();
             var gameConsole = new GameConsole("PS5");
-            player.AddGameConsole(gameConsole)
-            var game = new Game("SuperLuigiSisters")
+            player.AddGameConsole(gameConsole);
+            var game = new Game("SuperLuigiSisters");
 
         }
     }
@@ -68,9 +68,9 @@ public class GameLibrary
         }
     }
 
-    public AddGame(Game game)
+    public void AddGame(Game game)
     {
-        gameLibrary.Add(game);
+        games.Add(game);
     }
 }
 public class Processor
