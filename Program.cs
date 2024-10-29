@@ -4,12 +4,12 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!!");
             var player = new Player();
             var gameConsole = new GameConsole("PS5");
             player.AddGameConsole(gameConsole);
             var game = new Game("SuperLuigiSisters");
-
+            gameConsole.gameLibrary.AddGame(game);
+            gameConsole.gameLibrary.Show();
         }
     }
 }
@@ -33,8 +33,8 @@ public class GameConsole
     }
     GameLibrary gameLibrary = new GameLibrary();
 
-    Processor processor = new Processor();
-    GraphicsCard graphicsCard = new GraphicsCard();
+    //Processor processor = new Processor();
+    //GraphicsCard graphicsCard = new GraphicsCard();
 
     public void ChooseGame()
     {
@@ -49,7 +49,7 @@ public class Game
     {
         Name = name;
     }
-    Level level = new Level();
+    //Level level = new Level();
 }
 public class Level
 {
