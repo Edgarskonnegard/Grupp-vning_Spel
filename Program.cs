@@ -14,7 +14,7 @@
 class Player
 {
     List<GameConsole> gameConsole = new List<GameConsole>();
-    public AddGame(GameConsole console)
+    public AddGameConsole(GameConsole console)
     {
         gameConsole.Add(console);
     }
